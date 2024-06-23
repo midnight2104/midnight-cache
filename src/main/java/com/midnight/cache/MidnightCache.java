@@ -39,7 +39,6 @@ public class MidnightCache {
         }
     }
 
-
     public int incr(String key) {
         String str = get(key);
         int val = 0;
@@ -54,7 +53,6 @@ public class MidnightCache {
         }
         return val;
     }
-
 
     public int decr(String key) {
         String str = get(key);
