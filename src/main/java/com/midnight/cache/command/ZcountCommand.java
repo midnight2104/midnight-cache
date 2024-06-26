@@ -14,7 +14,7 @@ public class ZcountCommand implements Command {
     @Override
     public Reply<?> exec(MidnightCache cache, String[] args) {
         String key = getKey(args);
-        double min = Double.parseDouble(getKey(args));
+        double min = Double.parseDouble(getVal(args));
         double max = Double.parseDouble(args[8]);
 
         return Reply.integer(cache.zcount(key, min, max));
