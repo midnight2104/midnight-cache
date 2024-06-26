@@ -4,7 +4,7 @@ import com.midnight.cache.MidnightCache;
 import com.midnight.cache.core.Command;
 import com.midnight.cache.core.Reply;
 
-public class SREMCommand implements Command {
+public class SremCommand implements Command {
     @Override
     public String name() {
         return "SREM";
